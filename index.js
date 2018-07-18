@@ -1,2 +1,2 @@
-import PageScrollView from './PageListView';
+import PageScrollView from './PageScrollView';
 export default PageScrollView;

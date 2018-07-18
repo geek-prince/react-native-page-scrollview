@@ -17,7 +17,7 @@ npm地址: https://www.npmjs.com/package/react-native-page-scrollview
 
 首先导入组件
 
-`import PageScrollView from 'react-native-page-scrollView';`
+`import PageScrollView from 'react-native-page-scrollview';`
 
 ### 1.简单的轮播(每页图片大小相同时)
 
