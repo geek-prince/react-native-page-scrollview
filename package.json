@@ -1,0 +1,35 @@
+{
+  "name": "react-native-page-scrollview",
+  "version": "1.0.0",
+  "description": "对ScrollView的封装,可以很方便的实现水平,垂直分页轮播效果.而且可以自定义分页宽高,和侧边View的旋转,透明度,大小等.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "react-native",
+    "rn",
+    "RN",
+    "react",
+    "native",
+    "scrollView",
+    "ScrollView",
+    "page",
+    "page-scrollView",
+    "page-ScrollView",
+    "carousel",
+    "viewpager",
+    "Broadcasting",
+    "Image",
+    "picture",
+    "photo"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geek-prince/react-native-page-scrollview.git"
+  },
+  "author": "geekPrince",
+  "license": "MIT"
+}
