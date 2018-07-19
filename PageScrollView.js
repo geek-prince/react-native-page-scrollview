@@ -166,7 +166,7 @@ class PageScrollView extends Component{
                         isH?{skewY:rotate+'deg'}:(isios?{skewX:rotate+'deg'}:{skewY:-rotate+'deg'})
                         ]
                 }]}
-                      onLayout={(e)=>{!this.distance&&this.setDistance1(e,LW,LH,SW,SH);}}
+                      onLayout={(e)=>{!this.distance&&this.setDistance1(null,LW,LH,SW,SH);}}
                 >
                     <Image source={data} style={{width:widimage*size,height:heimage*size}}>
                         <View style={{position:'absolute',top:0,left:0,right:0,bottom:0,backgroundColor:'#000',opacity:1-opacity}}/>
@@ -250,9 +250,14 @@ class PageScrollView extends Component{
     setDistance1=(event,LargeWidth,LargeHeight,SmallWidth,SmallHeight)=>{
         if(this.distance){return}
         let isH=this.props.HorV==='h';
-        this.setState({width:LargeWidth,height:LargeHeight},()=>{
-            this.distance=isH?SmallWidth:SmallHeight;
-        });
+        if(event){
+            let {width,height} = event.nativeEvent.layout;
+            this.setDistance(width,height);
+        }else {
+            this.setState({width:LargeWidth,height:LargeHeight},()=>{
+                this.distance=isH?SmallWidth:SmallHeight;
+            });
+        }
     };
 
     //渲染下面的指示器
