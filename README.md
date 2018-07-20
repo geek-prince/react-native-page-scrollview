@@ -36,7 +36,7 @@ let imgArr=[
 `style`为整个轮播组件View的样式,可以通过它来设置轮播的宽高
 
 ```
-<PageListView 
+<PageScrollView 
 	style={{width:w,height:w/16*9}}
 	imageArr={imgArr}
 />
@@ -198,7 +198,7 @@ github上加载不出来或显示有问题,请点击这里: http://github.jikecl
 />
 ```
 
-##注意事项
+## 注意事项
 
 `imageArr`和`view`属性不能同时使用,`view`是自定义View时用的属性,`imageArr`为图片轮播时用的属性,都给出的话会使用`imageArr`属性,而`view`则无用,并且使用`view`属性时需要给出`datas`属性作为`view`的数据源.
 
